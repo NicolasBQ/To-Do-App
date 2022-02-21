@@ -6,5 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>To Do APP</title>
     </head>
-    <body></body>
+    <body>
+        <main class="main">
+            <h1 class="main__title title-font sd-text">#todo</h1>
+            <div class="main__sections">
+                <p class="main__sections-item text-font sd-text small-font font-600">All</p>
+
+                <p class="main__sections-item text-font sd-text small-font font-600">Active</p>
+
+                <p class="main__sections-item text-font sd-text small-font font-600">Completed</p>
+            </div>
+
+            <form class="main__form">
+                <input
+                    class="main__form-input medium-font text-font font-500"
+                    type="text"
+                    name="Task Name"
+                    id="taks-name"
+                    placeholder="add details"
+                />
+                <button type="submit" class="main__form-button text-font font-500 small-font">
+                    Add
+                </button>
+            </form>
+
+            <div class="all-tasks"></div>
+            <div class="active-tasks"></div>
+            <div class="completed-tasks"></div>
+        </main>
+    </body>
 </html>

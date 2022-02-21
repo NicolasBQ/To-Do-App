@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@700&display=swap');
+
+$soft-dark: #333333;
+$gray: #bdbdbd;
+$black: #000000;
+$accent-color: #2f80ed;
+$white: #ffffff;
+
+$titles: 'Raleway', sans-serif;
+$text: 'Montserrat', sans-serif;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

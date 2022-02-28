@@ -2,10 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
     entry: {
         index: './src/js/index.js',
+        tasksController: './src/js/tasksController.js',
+        domElements: './src/js/domElements.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -32,6 +35,7 @@ module.exports = {
             },
         ],
     },
+    externals: [nodeExternals()],
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),

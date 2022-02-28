@@ -1,0 +1,19 @@
+.list {
+    list-style: none;
+
+    &-item {
+        padding: 1rem 0;
+        width: 100%;
+        display: flex;
+        color: $black;
+        align-items: center;
+    }
+
+    &-checkbox {
+        height: 24px;
+        width: 24px;
+        border: none;
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+}

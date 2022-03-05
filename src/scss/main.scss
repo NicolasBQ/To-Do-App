@@ -1,5 +1,6 @@
 @import 'config';
 @import 'tasksStyle';
+@import 'toggleSections';
 
 body {
     display: flex;
@@ -47,14 +48,19 @@ body {
     &__sections {
         width: 100%;
         display: flex;
-        padding-bottom: 0.5rem;
         justify-content: space-evenly;
         border-bottom: 1px solid $gray;
         margin-bottom: 1rem;
 
+        &-section {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
         &-item {
             width: 5.625rem;
-            padding: 0 1.5rem;
+            margin-bottom: 0.5rem;
             cursor: pointer;
         }
     }

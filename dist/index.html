@@ -10,11 +10,30 @@
         <main class="main">
             <h1 class="main__title title-font sd-text">#todo</h1>
             <div class="main__sections">
-                <p class="main__sections-item text-font sd-text small-font font-600">All</p>
+                <div class="main__sections-section">
+                    <p class="main__sections-item text-font sd-text small-font font-600 all-tasks">
+                        All
+                    </p>
+                    <div class="active-border"></div>
+                </div>
 
-                <p class="main__sections-item text-font sd-text small-font font-600">Active</p>
+                <div class="main__sections-section">
+                    <p
+                        class="main__sections-item text-font sd-text small-font font-600 active-tasks"
+                    >
+                        Active
+                    </p>
+                    <div></div>
+                </div>
 
-                <p class="main__sections-item text-font sd-text small-font font-600">Completed</p>
+                <div class="main__sections-section">
+                    <p
+                        class="main__sections-item text-font sd-text small-font font-600 completed-tasks"
+                    >
+                        Completed
+                    </p>
+                    <div></div>
+                </div>
             </div>
 
             <form class="main__form">
@@ -30,9 +49,9 @@
                 </button>
             </form>
 
-            <ul class="list all-tasks"></ul>
-            <div class="list active-tasks"></div>
-            <div class="list completed-tasks"></div>
+            <ul class="list all-list"></ul>
+            <ul class="list active-list inactive-section"></ul>
+            <ul class="list completed-list inactive-section"></ul>
         </main>
-    <script defer src="index.86d06fbe360cd7c5c684.js"></script><script defer src="tasksController.9d18444d635c86c445f9.js"></script><script defer src="domElements.c6c6e49ea29114f5f2d9.js"></script></body>
+    <script defer src="index.c3ae8fb718dd9b4ad5b2.js"></script><script defer src="tasksController.739332a725be8887c9db.js"></script><script defer src="domElements.7ca3017182fabe518c6c.js"></script></body>
 </html>

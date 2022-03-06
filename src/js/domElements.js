@@ -1,3 +1,4 @@
+// Take all the HTML elements that are goint to interact in the app
 const domElements = () => {
     const form = document.querySelector('.main__form');
     const input = document.querySelector('.main__form-input');
@@ -9,6 +10,8 @@ const domElements = () => {
     const completedList = document.querySelector('.completed-list');
     const mainSections = document.querySelector('.main__sections');
     const checkboxInputs = document.querySelectorAll('.list-checkbox');
+    const deleteBtn = document.querySelector('.delete-all');
+    const deleteItems = document.querySelectorAll('.delete-item');
 
     return {
         form,
@@ -21,6 +24,8 @@ const domElements = () => {
         completedList,
         mainSections,
         checkboxInputs,
+        deleteBtn,
+        deleteItems,
     };
 };
 

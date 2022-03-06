@@ -9,6 +9,10 @@ module.exports = {
         index: './src/js/index.js',
         tasksController: './src/js/tasksController.js',
         domElements: './src/js/domElements.js',
+        filter: './src/js/filter.js',
+        removeTasks: './src/js/removeTasks.js',
+        toggleSections: './src/js/toggleSections.js',
+        userInterface: './src/js/userInterface.js',
     },
     plugins: [
         new HtmlWebpackPlugin({

@@ -76,6 +76,7 @@ body {
     }
 
     &__form {
+        display: flex;
         &-input {
             width: 80%;
             padding: 1rem;
@@ -100,4 +101,26 @@ body {
             cursor: pointer;
         }
     }
+}
+
+.footer {
+    position: fixed;
+    bottom: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 700;
+    color: #6d7f97;
+}
+
+.footer__text {
+    font-size: 1rem;
+}
+
+.footer__link {
+    color: inherit;
+}
+
+.footer__link:hover {
+    text-decoration: none;
+    color: $accent-color;
 }
